@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\title{Lists and Tables}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Lists}
+
+A bulleted list is \texttt{itemize}; each entry starts with \verb|\item|:
+\begin{itemize}
+    \item First point.
+    \item Second point.
+    \item Lists can nest:
+    \begin{itemize}
+        \item A sub-point.
+    \end{itemize}
+\end{itemize}
+
+Swap \texttt{itemize} for \texttt{enumerate} to number them:
+\begin{enumerate}
+    \item Step one.
+    \item Step two.
+\end{enumerate}
+
+\section{Tables}
+
+In a \texttt{tabular}, \verb|{l c r}| declares three columns --- left-,
+centre-, and right-aligned. \verb|&| separates cells, \verb|\\| ends a
+row, and \verb|\hline| draws a rule.
+
+\begin{center}
+\begin{tabular}{l c r}
+    \hline
+    Item     & Quantity & Price \\
+    \hline
+    Notebook & 3        & 4.50  \\
+    Pen      & 12       & 1.20  \\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}
