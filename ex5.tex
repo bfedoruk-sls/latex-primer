@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm} % provides the proof environment and \newtheorem
+
+% Declare the environments you want once, in the preamble.
+% "theorem" is the name you type; "Theorem" is the label that prints.
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+
+\title{Theorems and Proofs}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{definition}
+An integer $n$ is \emph{even} if $n = 2k$ for some integer $k$.
+\end{definition}
+
+\begin{theorem}
+The sum of two even integers is even.
+\end{theorem}
+
+\begin{proof}
+Let $a$ and $b$ be even, so $a = 2m$ and $b = 2n$ for integers $m$ and
+$n$. Then
+\[
+    a + b = 2m + 2n = 2(m + n),
+\]
+which is twice an integer, and therefore even. The \texttt{proof}
+environment ends with an automatic $\square$.
+\end{proof}
+
+\end{document}
