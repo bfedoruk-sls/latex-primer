@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+
+\title{Formatting Text}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+Sections are numbered automatically. Add or delete one and everything
+after it renumbers itself.
+
+\subsection{Emphasis}
+
+Text can be \textbf{bold}, \textit{italic}, or \texttt{monospaced}
+(handy for code). Nest them to combine: \textbf{\textit{both at once}}.
+
+\subsection{Characters that need escaping}
+
+A few characters mean something to LaTeX and must be escaped with a
+backslash to appear literally: \% \$ \& \_ \#. A backslash itself is
+\textbackslash{} (not \verb|\\|, which means "new line").
+
+\section{Spaces and quotes}
+
+Multiple     spaces in the source collapse to one. Quotation marks are
+made from backticks and apostrophes, not the \texttt{"} key:
+``like this'' and `like this'.
+
+\end{document}
