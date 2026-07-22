@@ -1,0 +1,24 @@
+% Every LaTeX document begins by choosing a document class.
+\documentclass[12pt]{article}
+
+% The preamble is everything between \documentclass and \begin{document}.
+% Packages loaded here add features; geometry sets the page margins.
+\usepackage[margin=1in]{geometry}
+
+% Title information is declared in the preamble...
+\title{My First Document}
+\author{Your Name}
+\date{\today} % \today inserts the compile date; you can hard-code one instead.
+
+\begin{document}
+
+% ...and printed here, where \maketitle uses it.
+\maketitle
+
+Hello, world. This is a paragraph. LaTeX ignores single line breaks in
+your source, so this sentence sits in the same paragraph as the one
+before it.
+
+A blank line in the source starts a new paragraph.
+
+\end{document}
